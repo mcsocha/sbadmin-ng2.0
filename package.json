@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "name": "SBAdminNg2.0",
+  "description": "MLM Dashboard",
+  "repository": {
+    "type": "git",
+    "url": "mlm.visualstudio.com/DefaultCollection/Archeo"
+  },
+  "readme": "readme.md",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "angular2": "2.0.0-beta.0",
+    "systemjs": "0.19.9",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.3",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10",
+    "gulp": "3.9.0",
+    "gulp-typescript": "2.10.0",
+    "run-sequence": "1.1.5",
+    "join-path": "1.1.0",
+    "stringformat": "0.0.5",
+    "pad": "1.0.0",
+    "typescript": "1.7.5",
+    "path-exists": "2.1.0"
+  }
+}
