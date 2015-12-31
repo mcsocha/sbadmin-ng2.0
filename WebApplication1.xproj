@@ -18,8 +18,10 @@
     <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
     <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
     <AssemblyVersionSettings>None.None.DateStamp.TimeStamp</AssemblyVersionSettings>
+    <TypeScriptCompileBlocked>True</TypeScriptCompileBlocked>
   </PropertyGroup>
   <ItemGroup>
+    <DnxInvisibleFolder Include=".git\" />
     <DnxInvisibleFolder Include=".vs" />
     <DnxInvisibleFolder Include="wwwroot\angular2\" />
     <DnxInvisibleFolder Include="wwwroot\es6-promise\" />

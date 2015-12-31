@@ -9,26 +9,38 @@ System.register(['angular2/core'], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var AppViewService, VIEWS;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
+            AppViewService = (function () {
+                function AppViewService() {
                 }
-                AppComponent = __decorate([
-                    core_1.Component({
-                        selector: 'app',
-                        template: '<h1></h1>'
-                    }), 
+                AppViewService.prototype.getViews = function () {
+                    return Promise.resolve(VIEWS);
+                };
+                // See the "Take it slow" appendix
+                AppViewService.prototype.getHeroesSlowly = function () {
+                    return new Promise(function (resolve) {
+                        return setTimeout(function () { return resolve(VIEWS); }, 2000);
+                    } // 2 seconds
+                     // 2 seconds
+                    );
+                };
+                AppViewService = __decorate([
+                    core_1.Injectable(), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], AppViewService);
+                return AppViewService;
             })();
-            exports_1("AppComponent", AppComponent);
+            exports_1("AppViewService", AppViewService);
+            exports_1("VIEWS", VIEWS = [
+                { name: "dashboard", id: 1 },
+                { name: "user-profile", id: 2 }
+            ]);
         }
     }
 });

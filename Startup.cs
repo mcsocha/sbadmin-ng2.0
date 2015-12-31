@@ -24,7 +24,7 @@ namespace WebApplication1
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            //services.AddMvc();
         }
         
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
@@ -34,7 +34,7 @@ namespace WebApplication1
 
             app.UseIISPlatformHandler();
             app.UseStaticFiles();
-            app.UseMvc();
+            //app.UseMvc();
         }
 
         public static void Main(string[] args) => WebApplication.Run<Startup>(args);

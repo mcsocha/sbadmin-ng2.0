@@ -1,5 +1,4 @@
-/// <binding BeforeBuild='node_modules:copy' ProjectOpened='ts:watch' />
-
+/// <binding />
 var gulp = require('gulp');
 var joinPath = require('join-path');
 var stringformat = require('stringformat').extendString('format');
@@ -17,7 +16,16 @@ gulp.task('node_modules:copy', function () {
         "es6-shim",
         "reflect-metadata",
         "rxjs",
-        "zone.js"
+        "zone.js",
+        "bootstrap",
+        "morris.js",
+        "metismenu",
+        "font-awesome",
+        "gridstack",
+        "raphael",
+        "jquery",
+        "typescript",
+        "gridstack"
     ];
     var src = 'node_modules';
     var dest = 'wwwroot/node_modules';
